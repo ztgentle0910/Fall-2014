@@ -15,4 +15,9 @@ game.addAsset('images/dice4.png', 'dice4');
 game.addAsset('images/dice5.png', 'dice5');
 game.addAsset('images/dice6.png', 'dice6');
 
+game.addAsset('images/UseCardButton.png', 'useButton');
+game.addAsset('images/tradeCardButton.png', 'tradeButton');
+game.addAsset('images/SkipButton.png', 'skipButton');
+game.addAsset('images/MainViewButton.png', 'mainviewButton');
+
 });

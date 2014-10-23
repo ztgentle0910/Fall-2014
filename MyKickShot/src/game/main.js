@@ -16,12 +16,11 @@ game.createScene('Main', {
 
 		var warmup = new game.Warmup();
 
-		//warmup.start();
-// Add new asset to load queue
-        
- 
-        // Init new loader
         this.addObject(warmup);
+	},
+
+	click: function(){
+		//console.log('test click');
 	}
 
 });
