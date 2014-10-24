@@ -10,6 +10,10 @@
 )
 .body(function(){
 
+
+/*
+ *	Main class for warmup
+ */
 game.createClass('Warmup', {
 
 	//chip: null,
@@ -20,7 +24,7 @@ game.createClass('Warmup', {
 	NoAwayCards: 60,
 	NoRefereeCards: 10,
 
-	
+	goal: false,	// this is used to end a gameturn loop once goaled
 
 	init: function() {
 		var field = new game.Sprite('field');
@@ -30,15 +34,41 @@ game.createClass('Warmup', {
 		var kickoff = new game.KickOff();
 		var loadcards = new game.LoadCards();
 
-		this.gameturn(kickoff);
+		// init 2 players
+		//var player 	= new game.Player();
+		//var AI 		= new game.Player();
+
+		//this.gameturn(kickoff, player, AI);
 	},
 
-	gameturn: function(KickOff){	// a gameturn only keeps till one goal
+	gameturn: function(KickOff, player, AI){	// a gameturn only keeps till one goal
+
 		KickOff.kick(true);
+		while(!goal){
+			// struggled with this part
+			// how should we deal with this part?
+
+		}
 
 
 	}
 
+
+});
+
+
+/*
+ *	A player class will hold all the current infomation for this player
+ */
+game.createClass('Player', {
+
+	currentScore: 0,
+
+	cards: [],	// are we gonna create card classes to hold the values for use later?
+
+	init: function(){
+		// need to draw 2 Dffence card and 4 offence card randomly
+	}
 
 });
 
