@@ -51,6 +51,10 @@ game.createClass('Warmup', {
 		}
 
 
+	}，
+
+	kickoff: function(){
+
 	}
 
 
@@ -121,25 +125,6 @@ game.createClass('HomeAway',{
 });
 
 
-/* 
- *	this class is for kick off 
- *	begnning of the game or each time goaled will call this class
- */
-game.createClass('KickOff', {
-
-	init: function() {	
-
-		// load chip image to mid of the scene
-		// then use other function roll dice to move the ball
-	},
-
-	kick: function(playerOffence){ // input which side is home to kick off
-		console.log(playerOffence);
-	}
-
-	
-
-});
 
 
 /*
